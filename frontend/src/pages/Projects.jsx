@@ -39,35 +39,39 @@ export default function Projects() {
           
           {/* === Professional Projects === */}
           <section>
-            <h3 className="text-2xl font-semibold mb-4">Professional Projects</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-center">Professional Projects</h3>
             <div className="space-y-6">
               <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-5 shadow-sm">
-                <h4 className="text-lg font-bold">Leasing Funnel Performance Dashboard</h4>
-                <p className="text-sm text-zinc-400">SQL • Metabase • Operational KPIs</p>
-                <p className="mt-2 text-zinc-300">
-                  Created a KPI dashboard to track leasing agent productivity, response times, and 
-                  conversion rates. Improved executive visibility and led to a 25% improvement in pipeline conversion.
+                <h4 className="text-lg font-bold text-center">Underwriting Department Metrics</h4>
+                <p className="text-sm text-zinc-400 text-center">SQL • Metabase • BigQuery • GitHub</p>
+                <p className="mt-2 text-zinc-300 text-center">
+                  Surfaced department-level analytics that led to a new SLA of 35 hours for cycle time, introduced KPI ownership per underwriter, stabilized approval rates to 50%, and shaped policy based on denial/cancellation trends.
                 </p>
               </div>
 
-              {/* Add more professional cards here */}
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-5 shadow-sm">
+                <h4 className="text-lg font-bold text-center">Leasing Funnel Performance Dashboard</h4>
+                <p className="text-sm text-zinc-400 text-center">SQL • Metabase • BigQuery • GitHub</p>
+                <p className="mt-2 text-zinc-300 text-center">
+                  Created a department-level dashboard to track leasing agent productivity, response times, and 
+                  conversion rates. Improved executive visibility and led to a 23% improvement in pipeline conversion.
+                </p>
+              </div>
             </div>
           </section>
 
           {/* === Personal Projects === */}
           <section>
-            <h3 className="text-2xl font-semibold mb-4">Personal Projects</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-center">Personal Projects</h3>
             <div className="space-y-6">
               <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-5 shadow-sm">
-                <h4 className="text-lg font-bold">Video Downloader App</h4>
-                <p className="text-sm text-zinc-400">React • Node.js • yt-dlp</p>
-                <p className="mt-2 text-zinc-300">
+                <h4 className="text-lg font-bold text-center">ClipFetch.io</h4>
+                <p className="text-sm text-zinc-400 text-center">React • Node.js • MongoDB • Stripe • Render • Vercel</p>
+                <p className="mt-2 text-zinc-300 text-center">
                   Full-stack tool for downloading videos from YouTube, TikTok, and Instagram. 
                   Supports authentication, tiered plans, and multiple video quality options.
                 </p>
               </div>
-
-              {/* Add more personal cards here */}
             </div>
           </section>
 
