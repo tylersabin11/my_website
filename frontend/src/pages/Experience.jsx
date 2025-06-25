@@ -26,7 +26,7 @@ export default function Experience() {
       ]
     },
     {
-      title: "Property Portfolio Analyst",
+      title: "Property Manager",
       date: "Sept 2022 – Aug 2023",
       bullets: [
         "Managed $300K in renovation budgets and timelines.",
@@ -39,7 +39,7 @@ export default function Experience() {
       date: "Jul 2021 – Aug 2022",
       bullets: [
         "Led training for 8+ underwriters over time.",
-        "Built metrics to track loan outcomes and team efficiency.",
+        "Built metrics to track team efficiency.",
         "Improved compliance with SOP-driven workflows."
       ]
     }
