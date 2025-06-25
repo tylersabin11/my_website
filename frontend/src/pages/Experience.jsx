@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 export default function Experience() {
   const evernestRoles = [
     {
-      title: "Head of Underwriting",
+      title: "Director of Underwriting",
       date: "Sept 2023 – Present",
       bullets: [
         "Scaled the team from 2 to 8 underwriters while improving overall performance.",
