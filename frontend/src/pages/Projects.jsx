@@ -1,7 +1,9 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import GitHubCalendar from "react-github-calendar";
+
+// Load the wrapper component dynamically to avoid Vite/Rollup issues
+const GitHubCalendarWrapper = lazy(() => import("../components/GitHubCalendarWrapper"));
 
 export default function Projects() {
   return (
@@ -48,16 +50,10 @@ export default function Projects() {
       </header>
 
       {/* === GitHub Contributions Calendar === */}
-      <div className="overflow-x-auto mb-12 px-2">
-        <div className="min-w-full max-w-full flex justify-center">
-          <GitHubCalendar
-            username="tylersabin11"
-            colorScheme="dark"
-            blockSize={15}
-            blockMargin={5}
-            fontSize={14}
-          />
-        </div>
+      <div className="overflow-x-auto mb-12 px-2 max-w-6xl mx-auto">
+        <Suspense fallback={<div className="text-center text-sm text-zinc-400">Loading GitHub contributions...</div>}>
+          <GitHubCalendarWrapper />
+        </Suspense>
       </div>
 
       {/* === Projects Content === */}
