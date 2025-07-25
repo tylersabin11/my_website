@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import GitHubCalendar from "react-github-calendar";
 
 export default function Projects() {
   return (
@@ -21,20 +22,46 @@ export default function Projects() {
         </nav>
 
         <div className="hidden md:flex space-x-4 text-lg">
-          <a href="https://github.com/tylersabin11" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-400">
+          <a
+            href="https://github.com/tylersabin11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-400"
+          >
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/tyler-sabin-450012212" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-400">
+          <a
+            href="https://linkedin.com/in/tyler-sabin-450012212"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-400"
+          >
             <FaLinkedin />
           </a>
-          <a href="mailto:tyler.sabin64@gmail.com" className="hover:text-zinc-400">
+          <a
+            href="mailto:tyler.sabin64@gmail.com"
+            className="hover:text-zinc-400"
+          >
             <FaEnvelope />
           </a>
         </div>
       </header>
 
+      {/* === GitHub Contributions Calendar === */}
+      <div className="overflow-x-auto mb-12 px-2">
+        <div className="min-w-full max-w-full flex justify-center">
+          <GitHubCalendar
+            username="tylersabin11"
+            colorScheme="dark"
+            blockSize={15}
+            blockMargin={5}
+            fontSize={14}
+          />
+        </div>
+      </div>
+
       {/* === Projects Content === */}
-      <div className="flex-grow flex justify-center items-start pt-35">
+      <div className="flex-grow flex justify-center items-start">
         <div className="max-w-4xl w-full space-y-12">
           
           {/* === Professional Projects === */}

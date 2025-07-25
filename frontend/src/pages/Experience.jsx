@@ -15,17 +15,6 @@ export default function Experience() {
       ]
     },
     {
-      title: "Data Analyst",
-      date: "May 2024 – May 2025",
-      bullets: [
-        "Published a centralized underwriting data table using BigQuery and GitHub.",
-        "Built a full underwriting analytics dashboard in Metabase.",
-        "Surfaced insights that led to higher application approval rates.",
-        "Overhauled leasing KPIs to reflect updated performance goals.",
-        "Identified trends that helped stabilize and improve leasing ops."
-      ]
-    },
-    {
       title: "Property Portfolio Analyst",
       date: "Sept 2022 – Aug 2023",
       bullets: [
