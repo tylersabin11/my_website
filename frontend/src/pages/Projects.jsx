@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Projects() {
+  useEffect(() => {
+    if (window.GitHubCalendar) {
+      window.GitHubCalendar(".calendar", "tylersabin11", { responsive: true });
+    }
+  }, []);
+
   return (
     <main className="min-h-screen bg-zinc-900 text-white px-6 py-4 flex flex-col">
       
@@ -32,6 +38,9 @@ export default function Projects() {
           </a>
         </div>
       </header>
+
+      {/* === GitHub Contributions Calendar === */}
+      <div className="calendar max-w-4xl mx-auto mb-10" />
 
       {/* === Projects Content === */}
       <div className="flex-grow flex justify-center items-start pt-35">
